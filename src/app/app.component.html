@@ -1,0 +1,4 @@
+<div [ngClass]="{'inc':count>0, 'dec':count<0, 'res':count==0}">
+  {{count}}
+</div>
+<app-control [in]="ctrl" (send)="receivecount($event)" ></app-control>
